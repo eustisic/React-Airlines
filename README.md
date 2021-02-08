@@ -1,6 +1,6 @@
 # React-Airlines
 
-![Airlines Thumbnail](./public/thumbnail.png)
+![Airlines Thumbnail](./public/thumbnail.jpg)
 
 **React-Airlines** is an app that allows the user to filter and display various airline routes around the world.
 

@@ -70,3 +70,12 @@ svg circle.source {
   fill: lightgreen;
   r: 0.5;
 }
+
+svg title {
+  display: none;
+}
+
+svg title:hover {
+  display: block;
+  transition-delay: 0s;
+}

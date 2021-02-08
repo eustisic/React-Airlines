@@ -72,13 +72,18 @@ const App = () => {
     setFilteredAirports(DATA.airports);
   }
 
+  const mapClick = (e) => {
+    let code = e.target.querySelector('title').innerHTML
+    selectAirport(code);
+  }
+
   return (
     <div className="app">
     <header className="header">
       <h1 className="title">Airline Routes</h1>
     </header>
     <section>
-      <RouteMap selected={selected}/>
+      <RouteMap selected={selected} handleClick={(e) => mapClick(e)}/>
     </section>
     <section>
     <Select 
