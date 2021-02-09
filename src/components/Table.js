@@ -8,7 +8,8 @@ const Table = ({columns, format, rows}) => {
   useEffect(() => {
     setNumRoutes(rows.length);
     setStart(0);
-  }, [rows])
+    rows.length < 25 ? setPerPage(rows.length) : setPerPage(25);
+  }, [rows, NumRoutes])
 
   const nextRoutes = () => {
     (start > NumRoutes - 1) 
